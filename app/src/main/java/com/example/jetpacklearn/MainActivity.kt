@@ -11,11 +11,13 @@ import androidx.ui.core.setContent
 import androidx.ui.foundation.DrawImage
 import androidx.ui.foundation.VerticalScroller
 import androidx.ui.foundation.shape.corner.RoundedCornerShape
+import androidx.ui.graphics.Color
 import androidx.ui.layout.*
 import androidx.ui.material.MaterialTheme
 import androidx.ui.material.TopAppBar
 import androidx.ui.material.surface.Card
 import androidx.ui.res.imageResource
+import androidx.ui.text.TextStyle
 import androidx.ui.tooling.preview.Preview
 
 class MainActivity : AppCompatActivity() {
@@ -72,8 +74,8 @@ fun MyApp(){
 @Composable
 fun MyAppBar(appBarTitle: String){
     TopAppBar(title = {
-        Text(text = appBarTitle)
-    })
+        Text(text = appBarTitle,style = TextStyle(color = Color.White))
+    },color = Color.Magenta)
 }
 
 @Composable
