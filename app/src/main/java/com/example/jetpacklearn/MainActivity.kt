@@ -25,7 +25,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             MyApp()
-        }
     }
 }
 
@@ -86,16 +85,17 @@ fun MyBody(){
             Column(modifier = Spacing(16.dp)) {
                 Container(expanded = true,height = 200.dp) {
                     Clip(shape = RoundedCornerShape(size = 10.dp)) {
-                        DrawImage(image = image)
+                            DrawImage(image = image)
+                        }
                     }
-                }
-                HeightSpacer(height = 10.dp)
+                    HeightSpacer(height = 10.dp)
 
-                Text(text = "Welcome to JetPack compose")
-                Text(text = "Android Studio Canary")
-                Text(text = "Canary 4.1")
+                    Text(text = "Welcome to JetPack compose")
+                    Text(text = "Android Studio Canary")
+                    Text(text = "Canary 4.1")
+                }
             }
         }
-    }
 
+    }
 }
